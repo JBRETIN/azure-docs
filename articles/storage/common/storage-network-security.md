@@ -191,6 +191,8 @@ Allowed internet address ranges can be provided using [CIDR notation](https://to
 
 IP network rules are only allowed for **public internet** IP addresses.  IP address ranges reserved for private networks (as defined in RFC 1918) are not allowed in IP rules.  Private networks include addresses that start with *10.\**, *172.16.\**, and *192.168.\**.
 
+IP network rules doesn't allow Azure In-Region Public IP addresses. A storage account can only be accessed from Azure Public IP addresses if those are deployed in a different Region.
+
 Only IPV4 addresses are supported at this time.
 
 Each storage account can support up to 100 IP network rules which may be combined with [Virtual Network rules](#grant-access-from-a-virtual-network)
